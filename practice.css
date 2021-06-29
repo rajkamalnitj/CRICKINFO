@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+  }
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    background-image:url('imgg111.jpg');
+    background-size: cover;
+    background-position: top center;
+ 
+        text-align: center;
+    
+  
+}
+form{
+    display: inline-block;
+}
+
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+margin-left:50px;
+margin-top:10px;
+background-color: white;
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 69px 150px;
+    padding-top: 153px;
+}
+header input{
+    width:100%;
+    max-width: 280px;
+    padding:10px 10px;
+    outline:none;
+    border: none;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 16px 0px 16px 0px;
+    color: rgb(54, 53, 51);
+
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+
+}
+header input:focus{
+    background-color: rgba(255,255,255,0.6);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.location .city{
+    color:white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.location .date{
+    color: white;
+    font-size: 16px;
+}
+.current .temp{
+    color: white;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px ;
+    text-shadow: 9px 8px rgba(0,0,0,0.75);
+
+}
+
+.profile1
+{
+background:url(download.png);
+    width:100%;
+    height:200px;
+border:5px solid rgb(0, 0, 0);
+    overflow:auto;
+}
+.profile
+{
+    color: rgb(17, 0, 255);;
+    font-size: 10px;
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+    text-align-last: justify;
+}
+
+
+#wicketss
+{
+width:100%;
+height:25px;
+background-color:blue;
+
+
+
+}
+.current .weather{
+    color: white;
+    font-size:32px ;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0,0,0,0.4);
+}
+
+.current .hi-low{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0,0,0,0.4);
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  #battingstyle
+  {
+font-size: 15px;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+  } 
+  .bowlingStyle
+  {
+font-size: 15px;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+  }
+  .majorTeams
+  {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+  }
+  .currentAge
+  {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white
+  }
+  .born
+  {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+  }
+  .fullName
+  {
+
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+
+  }
+  .name
+  {
+
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+
+  }
+  .playingRole
+  {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+
+  }
+  pre{
+font-size:20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+  }
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  input[type=text] {
+    width: 130px;
+    height:40px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+
+
+
+
+  h1 {
+      color:green;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-name: slidein;
+    -webkit-animation-name: slidein;
+         }
+         @keyframes slidein {
+            from {
+               margin-left:100%;
+               width:100%
+            }
+            75% {
+               font-size:300%;
+               margin-left:25%;
+               width:75%;
+            }
+            to {
+               margin-left:0%;
+               width:50%;
+            }
+         }
+         @keyframes slidein {
+            from {
+               margin-left:100%;
+               width:100%
+            }
+            75% {
+               font-size:300%;
+               margin-left:25%;
+               width:75%;
+            }
+            to {
+               margin-left:0%;
+               width:25%;
+            }
+         }
+
+#headerr
+{
+    width:100%;
+height:300px;
+background-image:url(image13434.jpg);
+}
