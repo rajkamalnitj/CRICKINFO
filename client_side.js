@@ -54,6 +54,8 @@ console.log(location);
             if (data.error) {
                 messageOne.textContent ="you must provide correct name , unable to fetch current data try again";
             } else {
+                if(data.imageURL!=null)
+                img1.src=data.imageURL;
                 messageOne.textContent =data.country;
                 messageTwo.textContent =data.pid;
                 pidvalue.textContent=data.pid;
@@ -120,8 +122,7 @@ console.log(location);
               majorTeams.textContent=data.majorTeams;
               currentAge.textContent=data.currentAge;
               born.textContent=data.born;
-              if(data.imageURL!=null)
-               img1.src=data.imageURL;
+            
 
 playingRole.textContent=data.playingRole;
 fullName.textContent=data.fullName;
