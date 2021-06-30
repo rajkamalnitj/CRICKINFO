@@ -52,7 +52,7 @@ console.log(location);
     fetch('/player?name='+location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
-                messageOne.textContent = data.error
+                messageOne.textContent ="you must provide correct name , unable to fetch current data try again";
             } else {
                 messageOne.textContent =data.country;
                 messageTwo.textContent =data.pid;

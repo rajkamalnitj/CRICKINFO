@@ -58,9 +58,17 @@ console.log(req.query.name);
 
 search(req.query.name, (error, res1) => {
     if (error) {
+        res.send(
+            {
+            "error":"error occured"
+            }
+         
+        )
         return console.log({error})
+      
     }
 console.log("pid value "+res);
+
     psearch(res1, (error, playerinfo) => {
         if (error) {
             return console.log({error})
@@ -74,6 +82,8 @@ res.send(
      playerinfo
   
 )
+
+  
         console.log('pid value'+playerinfo.pid);
         
         console.log(' country  '+playerinfo.country);

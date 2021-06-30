@@ -8,7 +8,7 @@ const search = (name, callback) => {
             callback('Unable to connect to weather service!', undefined);
 
         } 
-        else if(!res.body.data[0].pid)
+        else if(res.body.data.length==0)
         {
             callback(' wrong name!', undefined);
         }
